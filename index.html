@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PURPLE AI — Productivity & Learning Assistant</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #0d0d1a;
+      color: #e8e0ff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .glow {
+      position: fixed;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(138, 43, 226, 0.25) 0%, transparent 70%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    header {
+      margin-bottom: 3rem;
+    }
+
+    .logo {
+      font-size: 3.5rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      background: linear-gradient(135deg, #b07cff 0%, #7c3aed 50%, #c084fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: #a78bfa;
+      margin-top: 0.5rem;
+      letter-spacing: 0.05em;
+    }
+
+    .hero {
+      max-width: 640px;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 1.25rem;
+      color: #f0ebff;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #c4b5fd;
+      margin-bottom: 2.5rem;
+    }
+
+    .features {
+      display: flex;
+      gap: 1.25rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+
+    .feature-card {
+      background: rgba(109, 40, 217, 0.15);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 16px;
+      padding: 1.5rem 1.75rem;
+      width: 180px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(167, 139, 250, 0.6);
+    }
+
+    .feature-card .icon {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .feature-card h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #ddd6fe;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 0.9rem 2.5rem;
+      background: linear-gradient(135deg, #7c3aed, #a855f7);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 999px;
+      text-decoration: none;
+      box-shadow: 0 0 24px rgba(124, 58, 237, 0.5);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    .cta:hover {
+      box-shadow: 0 0 36px rgba(168, 85, 247, 0.7);
+      transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: #6d28d9;
+    }
+  </style>
+</head>
+<body>
+  <div class="glow" aria-hidden="true"></div>
+
+  <header>
+    <div class="logo">PURPLE AI</div>
+    <p class="tagline">Productivity &amp; Learning Assistant</p>
+  </header>
+
+  <main class="hero">
+    <h1>Supercharge your productivity with the power of AI</h1>
+    <p>
+      PURPLE AI helps you learn faster, work smarter, and stay focused —
+      combining intelligent assistance with personalized learning paths
+      designed around you.
+    </p>
+
+    <div class="features">
+      <div class="feature-card">
+        <div class="icon">🧠</div>
+        <h3>Smart Learning</h3>
+      </div>
+      <div class="feature-card">
+        <div class="icon">⚡</div>
+        <h3>Instant Answers</h3>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📈</div>
+        <h3>Track Progress</h3>
+      </div>
+    </div>
+
+    <a class="cta" href="mailto:lucasddash@gmail.com">Get Early Access</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 PURPLE AI. All rights reserved.</p>
+  </footer>
+</body>
+</html>
